@@ -1,0 +1,9 @@
+{
+  "comment": "TEST-ONLY ground truth for the tiny fixture. Runtime and model code must never import this file; only scripts under app/scripts may read it.",
+  "plantedDefects": {
+    "sentinelDateRecordId": "fx-003",
+    "replyBeforeOriginalRecordId": "fx-002",
+    "decoyRecordIds": ["fx-005", "fx-008"],
+    "atlasRecordIds": ["fx-001", "fx-002", "fx-003", "fx-004"]
+  }
+}

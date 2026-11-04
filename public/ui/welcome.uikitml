@@ -1,0 +1,359 @@
+<!--
+  Panel, Button, ButtonIcon, and ButtonLabel come from the bundled Horizon kit.
+  RectangleGoggles and LogIn are bundled Lucide icon components. The :dark
+  styles apply because iwsdk.config.json prefers the dark color scheme.
+
+  M4 defect fix (2026-10-27): controls are grouped into four contextual
+  tabs (Discover / Investigate / Review / Universe). The previous single
+  16-button column extended behind the VR platform, making lower buttons
+  unreachable in VR while MR (platform hidden) showed them fine.
+  PanelSystem toggles group visibility; only one group shows at a time.
+
+  2026-11-02: expanded tools use two columns (tools-columns) instead
+  of lengthening; the page strip pins Previous/Next Page on top.
+-->
+<style>
+  .panel-root {
+    flex-direction: column;
+    width: 460px;
+  }
+
+  .panel-content {
+    flex-direction: column;
+    gap: 3px;
+    padding: 12px;
+  }
+
+  .eyebrow {
+    color: #6b5a00;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+  }
+
+  .eyebrow:dark {
+    color: #f5d90a;
+  }
+
+  .heading {
+    color: #1c1d20;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27px;
+  }
+
+  .heading:dark {
+    color: #fafaf7;
+  }
+
+  .body {
+    color: #3a3b40;
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  .body:dark {
+    color: #dddfe3;
+  }
+
+  .button {
+    justify-content: flex-start;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 3px;
+  }
+
+  .button-label {
+    transform-translate-y: 1px;
+  }
+
+  .tab-row {
+    flex-direction: row;
+    gap: 4px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 7px;
+  }
+
+  .tab-button {
+    flex-grow: 1;
+    flex-basis: 0;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  .button:hover {
+    background-color: #8a6d1f;
+  }
+
+  .group {
+    flex-direction: column;
+  }
+
+  .tools-columns {
+    flex-direction: row;
+    gap: 4px;
+  }
+
+  .tools-col {
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+
+  .page-strip {
+    flex-direction: row;
+    gap: 4px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 6px;
+  }
+
+  .page-button {
+    flex-grow: 1;
+    flex-basis: 0;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+</style>
+<Panel class="panel-root">
+  <div class="panel-content">
+    <div class="eyebrow">MMDATA - M4 WORKING BUILD</div>
+    <div class="heading">Nova Chip - Trade Secret Matter - 3000 Records Collected</div>
+  </div>
+  <Button id="exit-button" class="button" style="display: none">
+    <ButtonIcon>
+      <LogIn></LogIn>
+    </ButtonIcon>
+    <ButtonLabel class="button-label">Exit to Browser</ButtonLabel>
+  </Button>
+  <Button id="voice-help" class="button">
+    <ButtonLabel class="button-label">Voice Help: what can I say?</ButtonLabel>
+  </Button>
+  <Button id="voice-button" class="button">
+    <ButtonLabel class="button-label">Voice: press X or tap, speak, pause</ButtonLabel>
+  </Button>
+  <Button id="voice-confirm" class="button">
+    <ButtonLabel class="button-label">Ask What I Said</ButtonLabel>
+  </Button>
+  <Button id="ambience-toggle" class="button">
+    <ButtonLabel class="button-label">Soundscape (tap to toggle)</ButtonLabel>
+  </Button>
+  <Button id="mode-toggle" class="button" style="display: none">
+    <ButtonLabel class="button-label">Switch VR / Mixed Reality</ButtonLabel>
+  </Button>
+  <div id="mode-note" class="body" style="display: none; margin-left: 22px; margin-right: 22px; margin-bottom: 10px">Switching takes a few seconds: you will briefly return to the browser, then re-enter automatically. No need to tap anything — just wait.</div>
+  <Button id="xr-button" class="button">
+    <ButtonIcon>
+      <RectangleGoggles></RectangleGoggles>
+    </ButtonIcon>
+    <ButtonLabel class="button-label">Enter Virtual Reality</ButtonLabel>
+  </Button>
+  <Button id="mr-button" class="button">
+    <ButtonIcon>
+      <RectangleGoggles></RectangleGoggles>
+    </ButtonIcon>
+    <ButtonLabel class="button-label">Enter Mixed Reality (Passthrough)</ButtonLabel>
+  </Button>
+  <Button id="ai-working" class="button" style="display: none">
+    <ButtonLabel class="button-label">AI IS WORKING - tap to stop</ButtonLabel>
+  </Button>
+  <div id="page-strip" class="page-strip">
+    <Button id="q-page-prev" class="page-button">
+      <ButtonLabel class="button-label">Previous Page</ButtonLabel>
+    </Button>
+    <Button id="q-page" class="page-button">
+      <ButtonLabel class="button-label">Next Page</ButtonLabel>
+    </Button>
+  </div>
+  <div id="tab-row" class="tab-row">
+    <Button id="tab-universe" class="tab-button">
+      <ButtonLabel class="button-label">Explore</ButtonLabel>
+    </Button>
+    <Button id="tab-discover" class="tab-button">
+      <ButtonLabel class="button-label">Investigate</ButtonLabel>
+    </Button>
+    <Button id="tab-investigate" class="tab-button">
+      <ButtonLabel class="button-label">Search</ButtonLabel>
+    </Button>
+    <Button id="tab-export" class="tab-button">
+      <ButtonLabel class="button-label">Export</ButtonLabel>
+    </Button>
+  </div>
+  <div id="g-discover" class="group" style="display: none">
+    <div class="body" style="margin-left: 22px; margin-right: 22px; margin-bottom: 10px">Ask the AI a question about the evidence. It searches and drafts findings for your decision.</div>
+    <Input id="ai-input" class="button" variant="text" placeholder="Ask your own question (tap, type, then Ask)" style="margin-left: 0; margin-right: 0" />
+    <Button id="ai-ask" class="button">
+      <ButtonLabel class="button-label">Ask My Question</ButtonLabel>
+    </Button>
+    <div class="tools-columns">
+      <div class="tools-col">
+    <Button id="ai-stop" class="button">
+      <ButtonLabel class="button-label">Stop AI</ButtonLabel>
+    </Button>
+    <Button id="ai-run" class="button">
+      <ButtonLabel class="button-label">AI Investigate: Trade Secret</ButtonLabel>
+    </Button>
+    <Button id="mark-doc-investigate" class="button">
+      <ButtonLabel class="button-label">Mark Highlighted DocIDs for Export</ButtonLabel>
+    </Button>
+      </div>
+      <div class="tools-col">
+    <Button id="discover-leads" class="button">
+      <ButtonLabel class="button-label">Find Leads (Discover)</ButtonLabel>
+    </Button>
+    <Button id="lead-1" class="button">
+      <ButtonLabel class="button-label">Explore Lead 1</ButtonLabel>
+    </Button>
+    <Button id="lead-2" class="button">
+      <ButtonLabel class="button-label">Explore Lead 2</ButtonLabel>
+    </Button>
+    <Button id="lead-3" class="button">
+      <ButtonLabel class="button-label">Explore Lead 3</ButtonLabel>
+    </Button>
+    <Button id="lead-ask" class="button">
+      <ButtonLabel class="button-label">Prepare Draft Finding</ButtonLabel>
+    </Button>
+      </div>
+    </div>
+  </div>
+  <div id="g-investigate" class="group">
+    <div class="body" style="margin-left: 22px; margin-right: 22px; margin-bottom: 10px">KEYWORD SEARCH finds exact words. Or type naturally above: "search for the term X" runs a term search here; a question goes to the AI investigator.</div>
+    <Input id="inv-ai-input" class="button" variant="text" placeholder="Type a search or a question in your own words" />
+    <Button id="inv-ai-ask" class="button">
+      <ButtonLabel class="button-label">Run What I Typed (search or ask)</ButtonLabel>
+    </Button>
+    <Input id="search-input" class="button" variant="search" placeholder="Keyword or phrase search (e.g. source code)" />
+    <div class="tools-columns">
+      <div class="tools-col">
+    <Button id="q-run" class="button">
+      <ButtonLabel class="button-label">Run My Search</ButtonLabel>
+    </Button>
+    <Button id="sg-ts0-1" class="button"><ButtonLabel class="button-label">Search: scheduler_core</ButtonLabel></Button>
+    <Button id="sg-ts0-2" class="button"><ButtonLabel class="button-label">Search: personal mailbox</ButtonLabel></Button>
+    <Button id="sg-ts0-3" class="button"><ButtonLabel class="button-label">Search: USB</ButtonLabel></Button>
+    <Button id="sg-ts0-4" class="button"><ButtonLabel class="button-label">Search: Reyes</ButtonLabel></Button>
+    <Button id="sg-ts1-1" class="button" style="display: none"><ButtonLabel class="button-label">Search: Nightjar</ButtonLabel></Button>
+    <Button id="sg-ts1-2" class="button" style="display: none"><ButtonLabel class="button-label">Search: not in email</ButtonLabel></Button>
+    <Button id="sg-ts1-3" class="button" style="display: none"><ButtonLabel class="button-label">Search: air-gapped</ButtonLabel></Button>
+    <Button id="sg-ts1-4" class="button" style="display: none"><ButtonLabel class="button-label">Search: escrow</ButtonLabel></Button>
+    <Button id="sg-at0-1" class="button" style="display: none"><ButtonLabel class="button-label">Search: Priya</ButtonLabel></Button>
+    <Button id="sg-at0-2" class="button" style="display: none"><ButtonLabel class="button-label">Search: Atlas</ButtonLabel></Button>
+    <Button id="sg-at0-3" class="button" style="display: none"><ButtonLabel class="button-label">Search: March</ButtonLabel></Button>
+    <Button id="sg-at0-4" class="button" style="display: none"><ButtonLabel class="button-label">Search: Invoice</ButtonLabel></Button>
+    <Button id="sg-at1-1" class="button" style="display: none"><ButtonLabel class="button-label">Search: catering</ButtonLabel></Button>
+    <Button id="sg-at1-2" class="button" style="display: none"><ButtonLabel class="button-label">Search: rota</ButtonLabel></Button>
+    <Button id="sg-at1-3" class="button" style="display: none"><ButtonLabel class="button-label">Search: Casey</ButtonLabel></Button>
+    <Button id="sg-at1-4" class="button" style="display: none"><ButtonLabel class="button-label">Search: schedule</ButtonLabel></Button>
+    <Button id="q-suggest-more" class="button">
+      <ButtonLabel class="button-label">Prepare New Search Suggestions</ButtonLabel>
+    </Button>
+      </div>
+      <div class="tools-col">
+    <Button id="q-next" class="button">
+      <ButtonLabel class="button-label">Next Hit</ButtonLabel>
+    </Button>
+    <Button id="q-prev" class="button">
+      <ButtonLabel class="button-label">Previous Hit</ButtonLabel>
+    </Button>
+    <Button id="q-all" class="button">
+      <ButtonLabel class="button-label">Clear Search (Show All)</ButtonLabel>
+    </Button>
+    <Button id="mark-doc-search" class="button">
+      <ButtonLabel class="button-label">Mark Hit DocIDs for Export</ButtonLabel>
+    </Button>
+    <Button id="q-export-ids" class="button">
+      <ButtonLabel class="button-label">Export Document IDs</ButtonLabel>
+    </Button>
+    <Button id="q-submit-report" class="button">
+      <ButtonLabel class="button-label">Add selection to search term report</ButtonLabel>
+    </Button>
+      </div>
+    </div>
+  </div>
+  <div id="g-export" class="group" style="display: none">
+    <div class="body" style="margin-left: 22px; margin-right: 22px; margin-bottom: 10px">Work LEFT to RIGHT: first decide draft findings with the left-hand buttons, then download approved work product with the right-hand buttons.</div>
+    <div class="tools-columns">
+      <div class="tools-col">
+    <Button id="findings-prev" class="button">
+      <ButtonLabel class="button-label">Select Previous Draft</ButtonLabel>
+    </Button>
+    <Button id="findings-next" class="button">
+      <ButtonLabel class="button-label">Select Next Draft</ButtonLabel>
+    </Button>
+    <Button id="ai-approve" class="button">
+      <ButtonLabel class="button-label">Approve Draft Finding</ButtonLabel>
+    </Button>
+    <Button id="ai-reject" class="button">
+      <ButtonLabel class="button-label">Reject Draft Finding</ButtonLabel>
+    </Button>
+    <Button id="ai-approve-all" class="button">
+      <ButtonLabel class="button-label">Approve All Draft Findings</ButtonLabel>
+    </Button>
+      </div>
+      <div class="tools-col">
+    <Button id="exp-findings" class="button">
+      <ButtonLabel class="button-label">Export All Approved (PDF Memo)</ButtonLabel>
+    </Button>
+    <Button id="exp-selected" class="button">
+      <ButtonLabel class="button-label">Export Selected Finding (PDF)</ButtonLabel>
+    </Button>
+    <Button id="exp-search-report" class="button">
+      <ButtonLabel class="button-label">Export Search Hit Report (CSV)</ButtonLabel>
+    </Button>
+    <Button id="exp-docids" class="button">
+      <ButtonLabel class="button-label">Export Marked DocIDs (Excel CSV)</ButtonLabel>
+    </Button>
+    <Button id="exp-zip" class="button">
+      <ButtonLabel class="button-label">Export All as ZIP</ButtonLabel>
+    </Button>
+      </div>
+    </div>
+  </div>
+  <div id="g-universe" class="group" style="display: none">
+    <div class="body" style="margin-left: 22px; margin-right: 22px; margin-bottom: 10px">EXPLORE: learn the dataset spatially. Start with Concept Clusters, then Custodians, File Types, Chronology, Network.</div>
+    <div class="tools-columns">
+      <div class="tools-col">
+    <Button id="lens-concepts-mode-computed" class="button">
+      <ButtonLabel class="button-label">Lens: Concept Clusters</ButtonLabel>
+    </Button>
+    <Button id="lens-custodians" class="button">
+      <ButtonLabel class="button-label">Lens: Custodians</ButtonLabel>
+    </Button>
+    <Button id="lens-filetypes" class="button">
+      <ButtonLabel class="button-label">Lens: File Types</ButtonLabel>
+    </Button>
+    <Button id="lens-chronology" class="button">
+      <ButtonLabel class="button-label">Lens: Chronology (by date)</ButtonLabel>
+    </Button>
+      </div>
+      <div class="tools-col">
+    <Button id="lens-network" class="button">
+      <ButtonLabel class="button-label">Lens: Network (by organization)</ButtonLabel>
+    </Button>
+    <Button id="lens-evidence" class="button">
+      <ButtonLabel class="button-label">Lens: Evidence (by organization/department)</ButtonLabel>
+    </Button>
+    <Button id="mark-doc-explore" class="button">
+      <ButtonLabel class="button-label">Mark DocID for Export</ButtonLabel>
+    </Button>
+      </div>
+    </div>
+    <Button id="expand-button" class="button" style="display: none">
+      <ButtonLabel class="button-label">Expand Universe</ButtonLabel>
+    </Button>
+    <Button id="compact-button" class="button" style="display: none">
+      <ButtonLabel class="button-label">Compact Universe</ButtonLabel>
+    </Button>
+  </div>
+  <Button id="tools-expand" class="button">
+    <ButtonLabel class="button-label">Show Tools</ButtonLabel>
+  </Button>
+  <Button id="tools-collapse" class="button" style="display: none">
+    <ButtonLabel class="button-label">hide tools</ButtonLabel>
+  </Button>
+</Panel>

@@ -1,0 +1,3 @@
+# PDFs carry byte-exact xref offsets; line-ending conversion would corrupt them.
+*.pdf binary
+*.zip binary

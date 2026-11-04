@@ -1,0 +1,19 @@
+{
+  "name": "Legal Data Universe",
+  "short_name": "Legal Data Universe",
+  "description": "Immersive VR/MR and browser investigation of source-grounded legal evidence.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#020712",
+  "theme_color": "#07111f",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

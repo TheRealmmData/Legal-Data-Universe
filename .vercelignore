@@ -1,0 +1,7 @@
+server/.env
+server/*.log
+.iwsdk/
+artifacts/
+checkpoints/
+node_modules/
+dist/

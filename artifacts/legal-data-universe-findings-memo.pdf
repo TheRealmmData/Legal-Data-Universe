@@ -1,0 +1,446 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R 10 0 R 12 0 R 14 0 R 16 0 R 18 0 R] /Count 7 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Length 3719 >>
+stream
+0.550 0.420 0.120 rg
+BT /F2 8.5 Tf 189.4 740.0 Td (ATTORNEY WORK PRODUCT - DRAFT FINDINGS MEMORANDUM) Tj ET
+0.080 0.080 0.080 rg
+BT /F2 22 Tf 189.0 720.3 Td (Legal Data Universe) Tj ET
+BT /F1 15 Tf 231.9 687.9 Td (Findings Memorandum) Tj ET
+0.45 0.38 0.18 RG 0.7 w 54 659.2 m 558 659.2 l S
+BT /F1 10 Tf 54.0 645.7 Td (Matter: NovaChip / Reyes Falcon source-code investigation \(fictional synthetic matter\)) Tj ET
+BT /F1 10 Tf 54.0 631.9 Td (Selection: All 3 approved finding\(s\)) Tj ET
+BT /F1 10 Tf 54.0 618.1 Td (Date exported: 2026-11-03T22:35:32.680Z) Tj ET
+BT /F1 10 Tf 54.0 604.3 Td (Corpus: novachip-trade-secret-3000) Tj ET
+0.350 0.350 0.350 rg
+BT /F1 8.5 Tf 54.0 590.5 Td (Synthetic demonstration data only - not client evidence, not connected to Relativity or any live matter.) Tj ET
+0.050 0.050 0.050 rg
+BT /F2 15 Tf 54.0 562.8 Td (Executive Summary) Tj ET
+0.080 0.080 0.080 rg
+BT /F1 10 Tf 54.0 542.1 Td (3 investigator-approved finding\(s\) are included. Rejected and undecided drafts are excluded.) Tj ET
+BT /F2 10 Tf 54.0 522.3 Td (1. Lead 1 - The midnight acquisition [SUPPORTED]) Tj ET
+BT /F1 10 Tf 68.0 508.5 Td (Reyes acquired Falcon material through anomalous channels shortly before departing \(off-hours) Tj ET
+BT /F1 10 Tf 68.0 494.7 Td (full-history clones; unregistered USB write\).) Tj ET
+BT /F2 10 Tf 54.0 474.9 Td (2. Lead 2 - Secrets leave through a personal mailbox [SUPPORTED]) Tj ET
+BT /F1 10 Tf 68.0 461.1 Td (Reyes transferred Falcon scheduler tuning parameters outside NovaChip \(personal mailbox) Tj ET
+BT /F1 10 Tf 68.0 447.3 Td (forward\).) Tj ET
+BT /F2 10 Tf 54.0 427.5 Td (3. Lead 3 - The smoking gun reaches HelixWorks [SUPPORTED]) Tj ET
+BT /F1 10 Tf 68.0 413.7 Td (Reyes transferred Falcon SOURCE CODE \(e.g. scheduler_core.ts\) to HelixWorks or another) Tj ET
+BT /F1 10 Tf 68.0 399.9 Td (external party.) Tj ET
+BT /F2 10 Tf 54.0 378.1 Td (Bottom line: the evidence establishes acquisition, an external tuning-parameter transfer,) Tj ET
+BT /F2 10 Tf 54.0 364.3 Td (and direct delivery of scheduler_core.ts to a HelixWorks engineer. It does not establish) Tj ET
+BT /F2 10 Tf 54.0 350.5 Td (upload to or use inside HelixWorks systems.) Tj ET
+0.050 0.050 0.050 rg
+BT /F2 15 Tf 54.0 320.7 Td (Approved Findings) Tj ET
+0.080 0.080 0.080 rg
+BT /F2 12 Tf 54.0 288.0 Td (1. Lead 1 - The midnight acquisition) Tj ET
+0.350 0.350 0.350 rg
+BT /F1 8.5 Tf 54.0 271.4 Td (Finding ID: finding-1 | Verdict: supported | Source: Multi-specialist deterministic assessment \(QC-checked\) |) Tj ET
+BT /F1 8.5 Tf 54.0 259.7 Td (Approved: 2026-11-03T22:35:32.678Z) Tj ET
+0.080 0.080 0.080 rg
+BT /F2 10 Tf 54.0 243.9 Td (Reyes acquired Falcon material through anomalous channels shortly before departing) Tj ET
+BT /F2 10 Tf 54.0 230.1 Td (\(off-hours full-history clones; unregistered USB write\).) Tj ET
+BT /F2 10.5 Tf 54.0 208.3 Td (Question asked) Tj ET
+BT /F1 10 Tf 54.0 193.8 Td (Demo lead) Tj ET
+BT /F2 10.5 Tf 54.0 172.0 Td (Why it matters) Tj ET
+BT /F1 10 Tf 54.0 157.6 Td (This establishes the acquisition timeline and the channels available to Reyes after resignation.) Tj ET
+BT /F1 10 Tf 54.0 143.8 Td (It does not, by itself, establish the contents of the USB device.) Tj ET
+BT /F2 10.5 Tf 54.0 122.0 Td (Evidence supporting the finding) Tj ET
+BT /F1 10 Tf 68.0 107.5 Td (- ts-003 - Git audit log extract - falcon-scheduler \(2026-06-14\): "Audit extract: user ereyes) Tj ET
+BT /F1 10 Tf 68.0 93.7 Td (cloned falcon-scheduler \(full history\) 2026-06-13 23:41 and again 2026-06-14 00:17 from a) Tj ET
+BT /F1 10 Tf 68.0 79.9 Td (non-standard host.") Tj ET
+0.35 0.35 0.35 rg BT /F1 7.5 Tf 54 36 Td (Legal Data Universe - Attorney work product \(synthetic demonstration\) - Page 1 of 7) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 4360 >>
+stream
+0.080 0.080 0.080 rg
+BT /F1 10 Tf 68.0 740.0 Td (- ts-004 - USB device event - workstation WS-4471 \(2026-06-15\): "Endpoint log: unregistered) Tj ET
+BT /F1 10 Tf 68.0 726.2 Td (USB mass-storage device mounted on WS-4471 \(E.") Tj ET
+BT /F1 10 Tf 68.0 712.4 Td (- ts-020 - Text message - Reyes to Raj \(USB\) \(2026-06-17\): "Please do not put this in email.") Tj ET
+BT /F1 10 Tf 68.0 698.6 Td (- ts-015 - Forensic timeline notes \(draft\) \(2026-07-15\): "Working timeline: resignation June) Tj ET
+BT /F1 10 Tf 68.0 684.8 Td (2; clones June 13-14 \(ts-003\); USB June 15 \(ts-004\); personal forward June 16 \(ts-005/006\);) Tj ET
+BT /F1 10 Tf 68.0 671.0 Td (last day June 19; Helix start June 29.") Tj ET
+BT /F2 10.5 Tf 54.0 649.2 Td (Counterevidence and limitations) Tj ET
+BT /F1 10 Tf 68.0 634.7 Td (- ts-008: "Approved as requested: you may copy the Falcon debug bundle \(logs + config, no) Tj ET
+BT /F1 10 Tf 68.0 620.9 Td (source\) to removable media for the customer onsite session on May 29.") Tj ET
+BT /F1 10 Tf 68.0 607.1 Td (- ts-018: "Grace: Reminder that the scheduled FALCON-MIRROR disaster-recovery job performs a) Tj ET
+BT /F1 10 Tf 68.0 593.3 Td (full clone at 23:30 under the svc-mirror account.") Tj ET
+BT /F1 10 Tf 68.0 579.5 Td (- USB device contents were never imaged; ts-008 approval covers a May 29 log/config bundle) Tj ET
+BT /F1 10 Tf 68.0 565.7 Td (with device logging, not the June 15 unregistered device. The scheduled svc-mirror clone) Tj ET
+BT /F1 10 Tf 68.0 551.9 Td (explains a service-account event, not the named-user clone in ts-003.) Tj ET
+BT /F2 10.5 Tf 54.0 530.1 Td (Recommended next step) Tj ET
+BT /F1 10 Tf 54.0 515.6 Td (Forensically scope the June 13-15 clone/USB window and reconcile device serials against the May) Tj ET
+BT /F1 10 Tf 54.0 501.8 Td (approval.) Tj ET
+BT /F2 12 Tf 54.0 476.0 Td (2. Lead 2 - Secrets leave through a personal mailbox) Tj ET
+0.350 0.350 0.350 rg
+BT /F1 8.5 Tf 54.0 459.5 Td (Finding ID: finding-2 | Verdict: supported | Source: Multi-specialist deterministic assessment \(QC-checked\) |) Tj ET
+BT /F1 8.5 Tf 54.0 447.7 Td (Approved: 2026-11-03T22:35:32.678Z) Tj ET
+0.080 0.080 0.080 rg
+BT /F2 10 Tf 54.0 432.0 Td (Reyes transferred Falcon scheduler tuning parameters outside NovaChip \(personal mailbox) Tj ET
+BT /F2 10 Tf 54.0 418.2 Td (forward\).) Tj ET
+BT /F2 10.5 Tf 54.0 396.4 Td (Question asked) Tj ET
+BT /F1 10 Tf 54.0 381.9 Td (Demo lead) Tj ET
+BT /F2 10.5 Tf 54.0 360.1 Td (Why it matters) Tj ET
+BT /F1 10 Tf 54.0 345.6 Td (This establishes that confidential Falcon tuning parameters left NovaChip and tests the) Tj ET
+BT /F1 10 Tf 54.0 331.8 Td (authorization explanation against the approval's express scope limit.) Tj ET
+BT /F2 10.5 Tf 54.0 310.0 Td (Evidence supporting the finding) Tj ET
+BT /F1 10 Tf 68.0 295.5 Td (- ts-005 - Falcon notes for myself \(2026-06-16\): "Forwarding my Falcon design notes and) Tj ET
+BT /F1 10 Tf 68.0 281.7 Td (scheduler tuning parameters to my personal mailbox so I can finish the handover doc from home) Tj ET
+BT /F1 10 Tf 68.0 267.9 Td (this weekend.") Tj ET
+BT /F1 10 Tf 68.0 254.1 Td (- ts-006 - falcon-tuning-notes \(2026-06-16\): "Falcon scheduler tuning parameters: cache) Tj ET
+BT /F1 10 Tf 68.0 240.3 Td (eviction thresholds, NUMA pinning matrix, and benchmark deltas vs the baseline scheduler.") Tj ET
+BT /F2 10.5 Tf 54.0 218.5 Td (Counterevidence and limitations) Tj ET
+BT /F1 10 Tf 68.0 204.0 Td (- ts-007: "Approval does NOT cover scheduler tuning parameters or benchmark data.") Tj ET
+BT /F1 10 Tf 68.0 190.2 Td (- ts-014: "Reyes confirmed return of laptop and badge, denied retaining company material, and) Tj ET
+BT /F1 10 Tf 68.0 176.4 Td (declined to name her new employer.") Tj ET
+BT /F1 10 Tf 68.0 162.6 Td (- The stated purpose \(finishing handover from home\) is in the same record; intent is for the) Tj ET
+BT /F1 10 Tf 68.0 148.8 Td (attorney, not this assessment. ts-007 approval explicitly excludes tuning parameters.) Tj ET
+BT /F2 10.5 Tf 54.0 127.0 Td (Recommended next step) Tj ET
+BT /F1 10 Tf 54.0 112.6 Td (Preserve and review the personal-mailbox attachment family and determine whether it was) Tj ET
+BT /F1 10 Tf 54.0 98.8 Td (forwarded or retained after departure.) Tj ET
+0.35 0.35 0.35 rg BT /F1 7.5 Tf 54 36 Td (Legal Data Universe - Attorney work product \(synthetic demonstration\) - Page 2 of 7) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Length 4500 >>
+stream
+0.080 0.080 0.080 rg
+BT /F2 12 Tf 54.0 728.0 Td (3. Lead 3 - The smoking gun reaches HelixWorks) Tj ET
+0.350 0.350 0.350 rg
+BT /F1 8.5 Tf 54.0 711.4 Td (Finding ID: finding-3 | Verdict: supported | Source: Multi-specialist deterministic assessment \(QC-checked\) |) Tj ET
+BT /F1 8.5 Tf 54.0 699.7 Td (Approved: 2026-11-03T22:35:32.678Z) Tj ET
+0.080 0.080 0.080 rg
+BT /F2 10 Tf 54.0 684.0 Td (Reyes transferred Falcon SOURCE CODE \(e.g. scheduler_core.ts\) to HelixWorks or another) Tj ET
+BT /F2 10 Tf 54.0 670.2 Td (external party.) Tj ET
+BT /F2 10.5 Tf 54.0 648.4 Td (Question asked) Tj ET
+BT /F1 10 Tf 54.0 633.9 Td (Demo lead) Tj ET
+BT /F2 10.5 Tf 54.0 612.1 Td (Why it matters) Tj ET
+BT /F1 10 Tf 54.0 597.6 Td (This is the direct source-code delivery evidence: sender, recipient, attached file identity, and) Tj ET
+BT /F1 10 Tf 54.0 583.8 Td (receipt align. Downstream use at HelixWorks remains a separate question.) Tj ET
+BT /F2 10.5 Tf 54.0 562.0 Td (Evidence supporting the finding) Tj ET
+BT /F1 10 Tf 68.0 547.5 Td (- ts-022 - For your eyes only - scheduler_core.ts \(2026-06-18\): "Oleg - attached is the) Tj ET
+BT /F1 10 Tf 68.0 533.7 Td (current NovaChip scheduler_core.ts from my June 13 clone.") Tj ET
+BT /F1 10 Tf 68.0 519.9 Td (- ts-023 - scheduler_core.ts \(email attachment\) \(2026-06-18\): "NovaChip Confidential scheduler) Tj ET
+BT /F1 10 Tf 68.0 506.1 Td (core.") Tj ET
+BT /F1 10 Tf 68.0 492.3 Td (- ts-024 - Re: For your eyes only - scheduler_core.ts \(2026-06-19\): "The scheduler_core.ts) Tj ET
+BT /F1 10 Tf 68.0 478.5 Td (file compiles on my air-gapped laptop.") Tj ET
+BT /F1 10 Tf 68.0 464.7 Td (- ts-025 - Teams chat - HelixWorks scheduler evaluation \(2026-06-20\): "Oleg: I deleted the ZIP) Tj ET
+BT /F1 10 Tf 68.0 450.9 Td (Elena sent after the air-gapped build worked.") Tj ET
+BT /F1 10 Tf 68.0 437.1 Td (- ts-013 - scheduler_core.ts \(repository snapshot\) \(2026-06-13\): "Repository snapshot of) Tj ET
+BT /F1 10 Tf 68.0 423.3 Td (scheduler_core.ts at the time of the audit-log clones \(ts-003\).") Tj ET
+BT /F2 10.5 Tf 54.0 401.5 Td (Counterevidence and limitations) Tj ET
+BT /F1 10 Tf 68.0 387.0 Td (- ts-009: "Reminder of your obligations: do not bring or use any NovaChip confidential) Tj ET
+BT /F1 10 Tf 68.0 373.2 Td (material here.") Tj ET
+BT /F1 10 Tf 68.0 359.4 Td (- ts-010: "Clean-room protocol v3: engineers with competitor backgrounds work from public) Tj ET
+BT /F1 10 Tf 68.0 345.6 Td (specifications only; all design inputs logged; no external code or documents may be introduced) Tj ET
+BT /F1 10 Tf 68.0 331.8 Td (without Legal review.") Tj ET
+BT /F1 10 Tf 68.0 318.0 Td (- ts-026: "This public scheduler_core.ts contains eviction statistics helpers only.") Tj ET
+BT /F1 10 Tf 68.0 304.2 Td (- ts-019: "No source code was sent to HelixWorks or any external party for this April escrow) Tj ET
+BT /F1 10 Tf 68.0 290.4 Td (verification, and the sealed media remained in Legal custody.") Tj ET
+BT /F1 10 Tf 68.0 276.6 Td (- Computed attachment fingerprint: ts-023 MD5 fa1c0de5c0ffee1234567890abcdef42 matches) Tj ET
+BT /F1 10 Tf 68.0 262.8 Td (internal snapshot ts-013. The public cache-utils extract \(ts-026\) and April escrow) Tj ET
+BT /F1 10 Tf 68.0 249.0 Td (verification \(ts-019\) are separate records and do not explain the June 18 send.) Tj ET
+BT /F1 10 Tf 68.0 235.2 Td (- Receipt and a local compile are established. Use inside HelixWorks systems or a product is) Tj ET
+BT /F1 10 Tf 68.0 221.4 Td (NOT established: ts-024 says it was not uploaded, and ts-025 says the ZIP was deleted after) Tj ET
+BT /F1 10 Tf 68.0 207.6 Td (the air-gapped build.) Tj ET
+BT /F1 10 Tf 68.0 193.8 Td (- Exhaustive search "scheduler_core" found 7 record\(s\), including the public red herring; read) Tj ET
+BT /F1 10 Tf 68.0 180.0 Td (content and fingerprints before treating filename matches as transfers.) Tj ET
+BT /F2 10.5 Tf 54.0 158.2 Td (Recommended next step) Tj ET
+BT /F1 10 Tf 54.0 143.7 Td (Preserve the recipient laptop and deleted ZIP, audit clean-room and repository logs, and scope) Tj ET
+BT /F1 10 Tf 54.0 129.9 Td (downstream use before alleging product contamination.) Tj ET
+0.050 0.050 0.050 rg
+BT /F2 15 Tf 54.0 100.1 Td (Investigation Scope and Method) Tj ET
+0.080 0.080 0.080 rg
+BT /F1 10 Tf 54.0 79.4 Td (The active corpus is novachip-trade-secret-3000. It contains 3000 synthetic records. Only the 3) Tj ET
+0.35 0.35 0.35 rg BT /F1 7.5 Tf 54 36 Td (Legal Data Universe - Attorney work product \(synthetic demonstration\) - Page 3 of 7) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 9 0 R >>
+endobj
+11 0 obj
+<< /Length 5864 >>
+stream
+0.080 0.080 0.080 rg
+BT /F1 10 Tf 54.0 740.0 Td (approved finding\(s\) named above are included in this memo.) Tj ET
+BT /F1 10 Tf 54.0 726.2 Td (Deterministic tools performed retrieval, counting, relationship/family tracing, file-fingerprint) Tj ET
+BT /F1 10 Tf 54.0 712.4 Td (comparison, and verbatim-quote verification. The AI planner/synthesizer was restricted to the) Tj ET
+BT /F1 10 Tf 54.0 698.6 Td (evidence supplied by those tools. A human investigator approved or rejected every draft; no) Tj ET
+BT /F1 10 Tf 54.0 684.8 Td (finding in this memo was auto-approved.) Tj ET
+BT /F1 10 Tf 54.0 671.0 Td (Planted or synthetic story evidence is not represented as real-world evidence. Identity, dates,) Tj ET
+BT /F1 10 Tf 54.0 657.2 Td (organizations, and content are fictional demonstration data.) Tj ET
+0.050 0.050 0.050 rg
+BT /F2 15 Tf 54.0 627.4 Td (Appendix A - Source Records and Provenance) Tj ET
+0.080 0.080 0.080 rg
+BT /F2 10.5 Tf 54.0 598.7 Td (ts-003 - Git audit log extract - falcon-scheduler) Tj ET
+0.350 0.350 0.350 rg
+BT /F1 8.5 Tf 54.0 584.2 Td (Date: 2026-06-14 \(verified\) | Kind: note | Custodian: Petrov, Ivan | People: Ivan Petrov, Elena Reyes) Tj ET
+BT /F1 8.5 Tf 54.0 572.5 Td (File: git-audit-log-extract-falcon-scheduler.log | MIME: text/plain | MD5: f8d085b8cf8d6ab84300fda099bf4fac |) Tj ET
+BT /F1 8.5 Tf 54.0 560.8 Td (Source path: /collections/novachip/ivan/git-audit-log-extract-falcon-scheduler.log) Tj ET
+BT /F1 8.5 Tf 54.0 549.0 Td (Provenance: synthetic-trade-secret-generator | Collection: novachip-trade-secret | Content hash: seed-7 |) Tj ET
+BT /F1 8.5 Tf 54.0 537.3 Td (Ingested: 2026-10-31T00:00:00Z) Tj ET
+0.080 0.080 0.080 rg
+BT /F2 10.5 Tf 54.0 517.6 Td (ts-004 - USB device event - workstation WS-4471) Tj ET
+0.350 0.350 0.350 rg
+BT /F1 8.5 Tf 54.0 503.1 Td (Date: 2026-06-15 \(verified\) | Kind: note | Custodian: Petrov, Ivan | People: Chris Nolan, Elena Reyes) Tj ET
+BT /F1 8.5 Tf 54.0 491.3 Td (File: usb-device-event-workstation-ws-4471.log | MIME: text/plain | MD5: 89263ddbaf9bf739cd3878247720201e | Source) Tj ET
+BT /F1 8.5 Tf 54.0 479.6 Td (path: /collections/novachip/chris/usb-device-event-workstation-ws-4471.log) Tj ET
+BT /F1 8.5 Tf 54.0 467.9 Td (Provenance: synthetic-trade-secret-generator | Collection: novachip-trade-secret | Content hash: seed-7 |) Tj ET
+BT /F1 8.5 Tf 54.0 456.2 Td (Ingested: 2026-10-31T00:00:00Z) Tj ET
+0.080 0.080 0.080 rg
+BT /F2 10.5 Tf 54.0 436.4 Td (ts-005 - Falcon notes for myself) Tj ET
+0.350 0.350 0.350 rg
+BT /F1 8.5 Tf 54.0 421.9 Td (Date: 2026-06-16 \(verified\) | Kind: email | Custodian: Reyes, Elena | People: Elena Reyes) Tj ET
+BT /F1 8.5 Tf 54.0 410.2 Td (File: falcon-notes-for-myself.msg | MIME: application/vnd.ms-outlook | MD5: b55cbc8c6948c14ddc65e457d6f86584 |) Tj ET
+BT /F1 8.5 Tf 54.0 398.5 Td (Family: fam-falcon-notes | Source path: /collections/novachip/elena/falcon-notes-for-myself.msg) Tj ET
+BT /F1 8.5 Tf 54.0 386.7 Td (Provenance: synthetic-trade-secret-generator | Collection: novachip-trade-secret | Content hash: seed-7 |) Tj ET
+BT /F1 8.5 Tf 54.0 375.0 Td (Ingested: 2026-10-31T00:00:00Z) Tj ET
+0.080 0.080 0.080 rg
+BT /F2 10.5 Tf 54.0 355.3 Td (ts-006 - falcon-tuning-notes) Tj ET
+0.350 0.350 0.350 rg
+BT /F1 8.5 Tf 54.0 340.8 Td (Date: 2026-06-16 \(verified\) | Kind: document | Custodian: Reyes, Elena | People: Elena Reyes) Tj ET
+BT /F1 8.5 Tf 54.0 329.1 Td (File: falcon-tuning-notes.docx | MIME: application/vnd.openxmlformats-officedocument.wordprocessingml.document |) Tj ET
+BT /F1 8.5 Tf 54.0 317.3 Td (MD5: 76be8a2b69d641abf541becdf3f486bc | Family: fam-falcon-notes | Parent: ts-005 | Source path:) Tj ET
+BT /F1 8.5 Tf 54.0 305.6 Td (/collections/novachip/elena/falcon-tuning-notes.docx) Tj ET
+BT /F1 8.5 Tf 54.0 293.9 Td (Provenance: synthetic-trade-secret-generator | Collection: novachip-trade-secret | Content hash: seed-7 |) Tj ET
+BT /F1 8.5 Tf 54.0 282.1 Td (Ingested: 2026-10-31T00:00:00Z) Tj ET
+0.080 0.080 0.080 rg
+BT /F2 10.5 Tf 54.0 262.4 Td (ts-007 - Open-source contribution approval - falcon-cache-utils) Tj ET
+0.350 0.350 0.350 rg
+BT /F1 8.5 Tf 54.0 247.9 Td (Date: 2026-03-11 \(verified\) | Kind: document | Custodian: Doyle, Karen | People: Karen Doyle, Elena Reyes) Tj ET
+BT /F1 8.5 Tf 54.0 236.2 Td (File: open-source-contribution-approval-falcon-c.pdf | MIME: application/pdf | MD5:) Tj ET
+BT /F1 8.5 Tf 54.0 224.5 Td (4d72b788ef21486ed8e47eac5efd02c1 | Source path:) Tj ET
+BT /F1 8.5 Tf 54.0 212.7 Td (/collections/novachip/karen/open-source-contribution-approval-falcon-c.pdf) Tj ET
+BT /F1 8.5 Tf 54.0 201.0 Td (Provenance: synthetic-trade-secret-generator | Collection: novachip-trade-secret | Content hash: seed-7 |) Tj ET
+BT /F1 8.5 Tf 54.0 189.3 Td (Ingested: 2026-10-31T00:00:00Z) Tj ET
+0.080 0.080 0.080 rg
+BT /F2 10.5 Tf 54.0 169.5 Td (ts-008 - Customer debug bundle approved) Tj ET
+0.350 0.350 0.350 rg
+BT /F1 8.5 Tf 54.0 155.0 Td (Date: 2026-05-28 \(verified\) | Kind: email | Custodian: Reyes, Elena | People: Marcus Webb, Elena Reyes) Tj ET
+BT /F1 8.5 Tf 54.0 143.3 Td (File: customer-debug-bundle-approved.msg | MIME: application/vnd.ms-outlook | MD5:) Tj ET
+BT /F1 8.5 Tf 54.0 131.6 Td (cb07f116cb4717682c4bd02be4da511f | Source path: /collections/novachip/marcus/customer-debug-bundle-approved.msg) Tj ET
+BT /F1 8.5 Tf 54.0 119.9 Td (Provenance: synthetic-trade-secret-generator | Collection: novachip-trade-secret | Content hash: seed-7 |) Tj ET
+BT /F1 8.5 Tf 54.0 108.1 Td (Ingested: 2026-10-31T00:00:00Z) Tj ET
+0.080 0.080 0.080 rg
+BT /F2 10.5 Tf 54.0 88.4 Td (ts-009 - Welcome to HelixWorks) Tj ET
+0.350 0.350 0.350 rg
+BT /F1 8.5 Tf 54.0 73.9 Td (Date: 2026-06-29 \(verified\) | Kind: email | Custodian: Brooks, Nina | People: Nina Brooks, Elena Reyes) Tj ET
+0.35 0.35 0.35 rg BT /F1 7.5 Tf 54 36 Td (Legal Data Universe - Attorney work product \(synthetic demonstration\) - Page 4 of 7) Tj ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 11 0 R >>
+endobj
+13 0 obj
+<< /Length 6074 >>
+stream
+0.350 0.350 0.350 rg
+BT /F1 8.5 Tf 54.0 740.0 Td (File: welcome-to-helixworks.msg | MIME: application/vnd.ms-outlook | MD5: 6c2b233e00fe79b2819bd1950e4245cd |) Tj ET
+BT /F1 8.5 Tf 54.0 728.3 Td (Source path: /collections/novachip/nina/welcome-to-helixworks.msg) Tj ET
+BT /F1 8.5 Tf 54.0 716.5 Td (Provenance: synthetic-trade-secret-generator | Collection: novachip-trade-secret | Content hash: seed-7 |) Tj ET
+BT /F1 8.5 Tf 54.0 704.8 Td (Ingested: 2026-10-31T00:00:00Z) Tj ET
+0.080 0.080 0.080 rg
+BT /F2 10.5 Tf 54.0 685.1 Td (ts-010 - HelixWorks clean-room protocol) Tj ET
+0.350 0.350 0.350 rg
+BT /F1 8.5 Tf 54.0 670.6 Td (Date: 2026-06-30 \(verified\) | Kind: document | Custodian: Brooks, Nina | People: Nina Brooks) Tj ET
+BT /F1 8.5 Tf 54.0 658.9 Td (File: helixworks-clean-room-protocol.pdf | MIME: application/pdf | MD5: abb46a5379a6b3b876d188aa16fb8b5f | Source) Tj ET
+BT /F1 8.5 Tf 54.0 647.1 Td (path: /collections/novachip/nina/helixworks-clean-room-protocol.pdf) Tj ET
+BT /F1 8.5 Tf 54.0 635.4 Td (Provenance: synthetic-trade-secret-generator | Collection: novachip-trade-secret | Content hash: seed-7 |) Tj ET
+BT /F1 8.5 Tf 54.0 623.7 Td (Ingested: 2026-10-31T00:00:00Z) Tj ET
+0.080 0.080 0.080 rg
+BT /F2 10.5 Tf 54.0 603.9 Td (ts-013 - scheduler_core.ts \(repository snapshot\)) Tj ET
+0.350 0.350 0.350 rg
+BT /F1 8.5 Tf 54.0 589.4 Td (Date: 2026-06-13 \(derived\) | Kind: document | Custodian: Webb, Marcus | People: Elena Reyes) Tj ET
+BT /F1 8.5 Tf 54.0 577.7 Td (File: scheduler-core-ts-repository-snapshot.ts | MIME: text/typescript | MD5: fa1c0de5c0ffee1234567890abcdef42 |) Tj ET
+BT /F1 8.5 Tf 54.0 566.0 Td (Source path: /collections/novachip/elena/scheduler-core-ts-repository-snapshot.ts) Tj ET
+BT /F1 8.5 Tf 54.0 554.3 Td (Provenance: synthetic-trade-secret-generator | Collection: novachip-trade-secret | Content hash: seed-7 |) Tj ET
+BT /F1 8.5 Tf 54.0 542.5 Td (Ingested: 2026-10-31T00:00:00Z) Tj ET
+0.080 0.080 0.080 rg
+BT /F2 10.5 Tf 54.0 522.8 Td (ts-014 - Exit interview summary - Reyes) Tj ET
+0.350 0.350 0.350 rg
+BT /F1 8.5 Tf 54.0 508.3 Td (Date: 2026-06-19 \(verified\) | Kind: email | Custodian: Kim, Hannah | People: Hannah Kim, Karen Doyle) Tj ET
+BT /F1 8.5 Tf 54.0 496.6 Td (File: exit-interview-summary-reyes.msg | MIME: application/vnd.ms-outlook | MD5: 407cd8bff5ddcebb54c5c09937ae4097) Tj ET
+BT /F1 8.5 Tf 54.0 484.8 Td (| Source path: /collections/novachip/hannah/exit-interview-summary-reyes.msg) Tj ET
+BT /F1 8.5 Tf 54.0 473.1 Td (Provenance: synthetic-trade-secret-generator | Collection: novachip-trade-secret | Content hash: seed-7 |) Tj ET
+BT /F1 8.5 Tf 54.0 461.4 Td (Ingested: 2026-10-31T00:00:00Z) Tj ET
+0.080 0.080 0.080 rg
+BT /F2 10.5 Tf 54.0 441.7 Td (ts-015 - Forensic timeline notes \(draft\)) Tj ET
+0.350 0.350 0.350 rg
+BT /F1 8.5 Tf 54.0 427.2 Td (Date: 2026-07-15 \(derived\) | Kind: note | Custodian: Petrov, Ivan | People: Ivan Petrov) Tj ET
+BT /F1 8.5 Tf 54.0 415.4 Td (File: forensic-timeline-notes-draft.md | MIME: text/markdown | MD5: abccc8ee8fe5ec7647fb5cbab9d1ce26 | Source) Tj ET
+BT /F1 8.5 Tf 54.0 403.7 Td (path: /collections/novachip/ivan/forensic-timeline-notes-draft.md) Tj ET
+BT /F1 8.5 Tf 54.0 392.0 Td (Provenance: synthetic-trade-secret-generator | Collection: novachip-trade-secret | Content hash: seed-7 |) Tj ET
+BT /F1 8.5 Tf 54.0 380.2 Td (Ingested: 2026-10-31T00:00:00Z) Tj ET
+0.080 0.080 0.080 rg
+BT /F2 10.5 Tf 54.0 360.5 Td (ts-018 - Teams chat - #falcon-war-room \(mirror job\)) Tj ET
+0.350 0.350 0.350 rg
+BT /F1 8.5 Tf 54.0 346.0 Td (Date: 2026-06-13 \(verified\) | Kind: note | Custodian: Liu, Grace | People: Grace Liu, Ivan Petrov, Elena Reyes,) Tj ET
+BT /F1 8.5 Tf 54.0 334.3 Td (Raj Patel) Tj ET
+BT /F1 8.5 Tf 54.0 322.6 Td (File: teams-chat-falcon-war-room-mirror-job.txt | MIME: text/plain | MD5: a68cba42fd579d104edfc7551731584a |) Tj ET
+BT /F1 8.5 Tf 54.0 310.8 Td (Source path: /collections/novachip/grace/teams-chat-falcon-war-room-mirror-job.txt) Tj ET
+BT /F1 8.5 Tf 54.0 299.1 Td (Provenance: synthetic-trade-secret-generator | Collection: novachip-trade-secret | Content hash: seed-7 |) Tj ET
+BT /F1 8.5 Tf 54.0 287.4 Td (Ingested: 2026-10-31T00:00:00Z) Tj ET
+0.080 0.080 0.080 rg
+BT /F2 10.5 Tf 54.0 267.6 Td (ts-019 - Source code escrow verification - April) Tj ET
+0.350 0.350 0.350 rg
+BT /F1 8.5 Tf 54.0 253.2 Td (Date: 2026-04-10 \(verified\) | Kind: email | Custodian: Doyle, Karen | People: Karen Doyle, Ivan Petrov, Marcus) Tj ET
+BT /F1 8.5 Tf 54.0 241.4 Td (Webb) Tj ET
+BT /F1 8.5 Tf 54.0 229.7 Td (File: source-code-escrow-verification-april.eml | MIME: message/rfc822 | MD5: bd7ced52600c1363eb5f5498fd0dfc07 |) Tj ET
+BT /F1 8.5 Tf 54.0 218.0 Td (Source path: /collections/novachip/karen/source-code-escrow-verification-april.eml) Tj ET
+BT /F1 8.5 Tf 54.0 206.2 Td (Provenance: synthetic-trade-secret-generator | Collection: novachip-trade-secret | Content hash: seed-7 |) Tj ET
+BT /F1 8.5 Tf 54.0 194.5 Td (Ingested: 2026-10-31T00:00:00Z) Tj ET
+0.080 0.080 0.080 rg
+BT /F2 10.5 Tf 54.0 174.8 Td (ts-020 - Text message - Reyes to Raj \(USB\)) Tj ET
+0.350 0.350 0.350 rg
+BT /F1 8.5 Tf 54.0 160.3 Td (Date: 2026-06-17 \(verified\) | Kind: note | Custodian: Patel, Raj | People: Elena Reyes, Raj Patel) Tj ET
+BT /F1 8.5 Tf 54.0 148.6 Td (File: text-message-reyes-to-raj-usb.txt | MIME: text/plain | MD5: d228e7ee5007fd78bc61a227804f9cea | Source path:) Tj ET
+BT /F1 8.5 Tf 54.0 136.8 Td (/collections/novachip/elena/text-message-reyes-to-raj-usb.txt) Tj ET
+BT /F1 8.5 Tf 54.0 125.1 Td (Provenance: synthetic-trade-secret-generator | Collection: novachip-trade-secret | Content hash: seed-7 |) Tj ET
+BT /F1 8.5 Tf 54.0 113.4 Td (Ingested: 2026-10-31T00:00:00Z) Tj ET
+0.080 0.080 0.080 rg
+BT /F2 10.5 Tf 54.0 93.6 Td (ts-022 - For your eyes only - scheduler_core.ts) Tj ET
+0.350 0.350 0.350 rg
+BT /F1 8.5 Tf 54.0 79.1 Td (Date: 2026-06-18 \(verified\) | Kind: email | Custodian: Reyes, Elena | People: Elena Reyes, Oleg Sorin) Tj ET
+0.35 0.35 0.35 rg BT /F1 7.5 Tf 54 36 Td (Legal Data Universe - Attorney work product \(synthetic demonstration\) - Page 5 of 7) Tj ET
+endstream
+endobj
+14 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 13 0 R >>
+endobj
+15 0 obj
+<< /Length 5266 >>
+stream
+0.350 0.350 0.350 rg
+BT /F1 8.5 Tf 54.0 740.0 Td (File: for-your-eyes-only-scheduler-core-ts.eml | MIME: message/rfc822 | MD5: a50ded498456fe8b5912a58b3b0f869b |) Tj ET
+BT /F1 8.5 Tf 54.0 728.3 Td (Family: fam-scheduler-transfer | Source path: /collections/novachip/elena/for-your-eyes-only-scheduler-core-ts.eml) Tj ET
+BT /F1 8.5 Tf 54.0 716.5 Td (Provenance: synthetic-trade-secret-generator | Collection: novachip-trade-secret | Content hash: seed-7 |) Tj ET
+BT /F1 8.5 Tf 54.0 704.8 Td (Ingested: 2026-10-31T00:00:00Z) Tj ET
+0.080 0.080 0.080 rg
+BT /F2 10.5 Tf 54.0 685.1 Td (ts-023 - scheduler_core.ts \(email attachment\)) Tj ET
+0.350 0.350 0.350 rg
+BT /F1 8.5 Tf 54.0 670.6 Td (Date: 2026-06-18 \(verified\) | Kind: document | Custodian: Reyes, Elena | People: Elena Reyes) Tj ET
+BT /F1 8.5 Tf 54.0 658.9 Td (File: scheduler-core-ts-email-attachment.ts | MIME: text/typescript | MD5: fa1c0de5c0ffee1234567890abcdef42 |) Tj ET
+BT /F1 8.5 Tf 54.0 647.1 Td (Family: fam-scheduler-transfer | Parent: ts-022 | Source path:) Tj ET
+BT /F1 8.5 Tf 54.0 635.4 Td (/collections/novachip/elena/scheduler-core-ts-email-attachment.ts) Tj ET
+BT /F1 8.5 Tf 54.0 623.7 Td (Provenance: synthetic-trade-secret-generator | Collection: novachip-trade-secret | Content hash: seed-7 |) Tj ET
+BT /F1 8.5 Tf 54.0 611.9 Td (Ingested: 2026-10-31T00:00:00Z) Tj ET
+0.080 0.080 0.080 rg
+BT /F2 10.5 Tf 54.0 592.2 Td (ts-024 - Re: For your eyes only - scheduler_core.ts) Tj ET
+0.350 0.350 0.350 rg
+BT /F1 8.5 Tf 54.0 577.7 Td (Date: 2026-06-19 \(verified\) | Kind: email | Custodian: Sorin, Oleg | People: Oleg Sorin, Elena Reyes) Tj ET
+BT /F1 8.5 Tf 54.0 566.0 Td (File: re-for-your-eyes-only-scheduler-core-ts.msg | MIME: application/vnd.ms-outlook | MD5:) Tj ET
+BT /F1 8.5 Tf 54.0 554.3 Td (a4eb02fcbc6ea69ba1fde4be7767958e | Source path:) Tj ET
+BT /F1 8.5 Tf 54.0 542.5 Td (/collections/novachip/oleg/re-for-your-eyes-only-scheduler-core-ts.msg) Tj ET
+BT /F1 8.5 Tf 54.0 530.8 Td (Provenance: synthetic-trade-secret-generator | Collection: novachip-trade-secret | Content hash: seed-7 |) Tj ET
+BT /F1 8.5 Tf 54.0 519.1 Td (Ingested: 2026-10-31T00:00:00Z) Tj ET
+0.080 0.080 0.080 rg
+BT /F2 10.5 Tf 54.0 499.3 Td (ts-025 - Teams chat - HelixWorks scheduler evaluation) Tj ET
+0.350 0.350 0.350 rg
+BT /F1 8.5 Tf 54.0 484.8 Td (Date: 2026-06-20 \(verified\) | Kind: note | Custodian: Brooks, Nina | People: Oleg Sorin, Nina Brooks) Tj ET
+BT /F1 8.5 Tf 54.0 473.1 Td (File: teams-chat-helixworks-scheduler-evaluation.txt | MIME: text/plain | MD5: 88fccb7ce724e9cf7579079249188229 |) Tj ET
+BT /F1 8.5 Tf 54.0 461.4 Td (Source path: /collections/novachip/oleg/teams-chat-helixworks-scheduler-evaluation.txt) Tj ET
+BT /F1 8.5 Tf 54.0 449.7 Td (Provenance: synthetic-trade-secret-generator | Collection: novachip-trade-secret | Content hash: seed-7 |) Tj ET
+BT /F1 8.5 Tf 54.0 437.9 Td (Ingested: 2026-10-31T00:00:00Z) Tj ET
+0.080 0.080 0.080 rg
+BT /F2 10.5 Tf 54.0 418.2 Td (ts-026 - scheduler_core.ts \(public cache-utils extract\)) Tj ET
+0.350 0.350 0.350 rg
+BT /F1 8.5 Tf 54.0 403.7 Td (Date: 2026-03-12 \(verified\) | Kind: document | Custodian: Patel, Raj | People: Raj Patel, Elena Reyes) Tj ET
+BT /F1 8.5 Tf 54.0 392.0 Td (File: scheduler-core-ts-public-cache-utils-extra.ts | MIME: text/typescript | MD5:) Tj ET
+BT /F1 8.5 Tf 54.0 380.2 Td (154be8828c5f948eefc16bc30c4282d4 | Source path:) Tj ET
+BT /F1 8.5 Tf 54.0 368.5 Td (/collections/novachip/raj/scheduler-core-ts-public-cache-utils-extra.ts) Tj ET
+BT /F1 8.5 Tf 54.0 356.8 Td (Provenance: synthetic-trade-secret-generator | Collection: novachip-trade-secret | Content hash: seed-7 |) Tj ET
+BT /F1 8.5 Tf 54.0 345.1 Td (Ingested: 2026-10-31T00:00:00Z) Tj ET
+0.050 0.050 0.050 rg
+BT /F2 15 Tf 54.0 317.3 Td (Appendix B - Search Executions) Tj ET
+0.080 0.080 0.080 rg
+BT /F1 10 Tf 54.0 296.6 Td (No search executions were recorded in this session.) Tj ET
+0.050 0.050 0.050 rg
+BT /F2 15 Tf 54.0 266.8 Td (Appendix C - Approval and Audit Trail) Tj ET
+0.080 0.080 0.080 rg
+BT /F1 10 Tf 68.0 246.1 Td (- finding-1: approved at 2026-11-03T22:35:32.678Z; Multi-specialist deterministic assessment) Tj ET
+BT /F1 10 Tf 68.0 232.3 Td (\(QC-checked\).) Tj ET
+BT /F1 10 Tf 68.0 218.5 Td (- finding-2: approved at 2026-11-03T22:35:32.678Z; Multi-specialist deterministic assessment) Tj ET
+BT /F1 10 Tf 68.0 204.7 Td (\(QC-checked\).) Tj ET
+BT /F1 10 Tf 68.0 190.9 Td (- finding-3: approved at 2026-11-03T22:35:32.678Z; Multi-specialist deterministic assessment) Tj ET
+BT /F1 10 Tf 68.0 177.1 Td (\(QC-checked\).) Tj ET
+BT /F2 12 Tf 54.0 151.3 Td (Session audit events) Tj ET
+BT /F1 10 Tf 68.0 134.8 Td (- 2026-11-03T22:35:32.502Z [investigator] objective-set: Did Reyes deliver Falcon source code) Tj ET
+BT /F1 10 Tf 68.0 121.0 Td (to HelixWorks?) Tj ET
+BT /F1 10 Tf 68.0 107.2 Td (- 2026-11-03T22:35:32.678Z [agent] finding-drafted: finding-1: [SUPPORTED] Reyes acquired) Tj ET
+BT /F1 10 Tf 68.0 93.4 Td (Falcon material through anomalous channels shortly before departing \(off-hours full-history c) Tj ET
+BT /F1 10 Tf 68.0 79.6 Td (- 2026-11-03T22:35:32.678Z [investigator] finding-approved: finding-1) Tj ET
+0.35 0.35 0.35 rg BT /F1 7.5 Tf 54 36 Td (Legal Data Universe - Attorney work product \(synthetic demonstration\) - Page 6 of 7) Tj ET
+endstream
+endobj
+16 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 15 0 R >>
+endobj
+17 0 obj
+<< /Length 1474 >>
+stream
+0.080 0.080 0.080 rg
+BT /F1 10 Tf 68.0 740.0 Td (- 2026-11-03T22:35:32.678Z [agent] finding-drafted: finding-2: [SUPPORTED] Reyes transferred) Tj ET
+BT /F1 10 Tf 68.0 726.2 Td (Falcon scheduler tuning parameters outside NovaChip \(personal mailbox forward\). Counterevi) Tj ET
+BT /F1 10 Tf 68.0 712.4 Td (- 2026-11-03T22:35:32.678Z [investigator] finding-approved: finding-2) Tj ET
+BT /F1 10 Tf 68.0 698.6 Td (- 2026-11-03T22:35:32.678Z [agent] finding-drafted: finding-3: [SUPPORTED] Reyes transferred) Tj ET
+BT /F1 10 Tf 68.0 684.8 Td (Falcon SOURCE CODE \(e.g. scheduler_core.ts\) to HelixWorks or another external party. Count) Tj ET
+BT /F1 10 Tf 68.0 671.0 Td (- 2026-11-03T22:35:32.678Z [investigator] finding-approved: finding-3) Tj ET
+0.050 0.050 0.050 rg
+BT /F2 15 Tf 54.0 641.2 Td (Appendix D - Machine-Readable Companion) Tj ET
+0.080 0.080 0.080 rg
+BT /F1 10 Tf 54.0 620.5 Td (The ZIP export includes approved-findings.json with the same approved claims, verbatim) Tj ET
+BT /F1 10 Tf 54.0 606.7 Td (citations, counter-citations, gaps, provenance, search executions, annotations, and audit trail) Tj ET
+BT /F1 10 Tf 54.0 592.9 Td (in structured form. The PDF is the attorney-facing presentation; JSON exists for reproducibility) Tj ET
+BT /F1 10 Tf 54.0 579.1 Td (and downstream processing, not as the primary work product.) Tj ET
+0.35 0.35 0.35 rg BT /F1 7.5 Tf 54 36 Td (Legal Data Universe - Attorney work product \(synthetic demonstration\) - Page 7 of 7) Tj ET
+endstream
+endobj
+18 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 17 0 R >>
+endobj
+xref
+0 19
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000156 00000 n 
+0000000253 00000 n 
+0000000355 00000 n 
+0000004126 00000 n 
+0000004262 00000 n 
+0000008674 00000 n 
+0000008810 00000 n 
+0000013362 00000 n 
+0000013499 00000 n 
+0000019416 00000 n 
+0000019554 00000 n 
+0000025681 00000 n 
+0000025819 00000 n 
+0000031138 00000 n 
+0000031276 00000 n 
+0000032803 00000 n 
+trailer
+<< /Size 19 /Root 1 0 R >>
+startxref
+32941
+%%EOF

@@ -1,0 +1,513 @@
+{
+    "version":  "iwsdk.scene.v1",
+    "units":  "meters",
+    "components":  {
+                       "com.iwsdk.components.DomeGradient":  {
+                                                                 "sky":  [
+                                                                             0.008,
+                                                                             0.012,
+                                                                             0.035,
+                                                                             1
+                                                                         ],
+                                                                 "equator":  [
+                                                                                 0.03,
+                                                                                 0.055,
+                                                                                 0.12,
+                                                                                 1
+                                                                             ],
+                                                                 "ground":  [
+                                                                                0.004,
+                                                                                0.005,
+                                                                                0.012,
+                                                                                1
+                                                                            ],
+                                                                 "elevationDeg":  18,
+                                                                 "azimuthDeg":  -30,
+                                                                 "dither":  true
+                                                             },
+                       "com.iwsdk.components.IBLGradient":  {
+                                                                "sky":  [
+                                                                            0.16,
+                                                                            0.22,
+                                                                            0.38,
+                                                                            1
+                                                                        ],
+                                                                "equator":  [
+                                                                                0.1,
+                                                                                0.14,
+                                                                                0.24,
+                                                                                1
+                                                                            ],
+                                                                "ground":  [
+                                                                               0.03,
+                                                                               0.035,
+                                                                               0.06,
+                                                                               1
+                                                                           ],
+                                                                "intensity":  0.5
+                                                            }
+                   },
+    "environment":  {
+                        "toneMapping":  "aces",
+                        "exposure":  1.15,
+                        "shadows":  true,
+                        "shadowMapType":  "pcf"
+                    },
+    "resources":  {
+
+                  },
+    "nodes":  [
+                  {
+                      "id":  "atlas-floor",
+                      "name":  "Observatory Floor",
+                      "framingRole":  "support",
+                      "content":  {
+                                      "type":  "asset",
+                                      "asset":  "atlas-floor",
+                                      "receiveShadow":  true
+                                  },
+                      "components":  {
+                                         "LocomotionEnvironment":  {
+
+                                                                   },
+                                         "DomeFade":  {
+                                                          "start":  9,
+                                                          "end":  24
+                                                      }
+                                     }
+                  },
+                  {
+                      "id":  "atlas-platform",
+                      "name":  "Arrival Platform",
+                      "framingRole":  "support",
+                      "content":  {
+                                      "type":  "asset",
+                                      "asset":  "atlas-platform",
+                                      "castShadow":  true,
+                                      "receiveShadow":  true
+                                  },
+                      "transform":  {
+                                        "position":  [
+                                                         0,
+                                                         0.002,
+                                                         0
+                                                     ]
+                                    }
+                  },
+                  {
+                      "id":  "atlas-starfield",
+                      "name":  "Starfield",
+                      "content":  {
+                                      "type":  "asset",
+                                      "asset":  "atlas-starfield"
+                                  },
+                      "transform":  {
+                                        "position":  [
+                                                         0,
+                                                         0,
+                                                         0
+                                                     ]
+                                    }
+                  },
+                  {
+                      "id":  "atlas-depth-dust",
+                      "name":  "Depth Dust (ambient scenery)",
+                      "framingRole":  "support",
+                      "content":  {
+                                      "type":  "asset",
+                                      "asset":  "atlas-depth-dust"
+                                  }
+                  },
+                  {
+                      "id":  "cluster-teal",
+                      "name":  "Formation Teal (placeholder scenery)",
+                      "content":  {
+                                      "type":  "asset",
+                                      "asset":  "atlas-cluster-teal"
+                                  },
+                      "transform":  {
+                                        "position":  [
+                                                         -22,
+                                                         10,
+                                                         -18
+                                                     ],
+                                        "rotationDeg":  [
+                                                            62,
+                                                            0,
+                                                            -18
+                                                        ],
+                                        "scale":  [
+                                                      3,
+                                                      3,
+                                                      3
+                                                  ]
+                                    }
+                  },
+                  {
+                      "id":  "cluster-gold",
+                      "name":  "Formation Gold (placeholder scenery)",
+                      "content":  {
+                                      "type":  "asset",
+                                      "asset":  "atlas-cluster-gold"
+                                  },
+                      "transform":  {
+                                        "position":  [
+                                                         18,
+                                                         14,
+                                                         21
+                                                     ],
+                                        "rotationDeg":  [
+                                                            68,
+                                                            0,
+                                                            12
+                                                        ],
+                                        "scale":  [
+                                                      3,
+                                                      3,
+                                                      3
+                                                  ]
+                                    }
+                  },
+                  {
+                      "id":  "cluster-white",
+                      "name":  "Formation White (placeholder scenery)",
+                      "content":  {
+                                      "type":  "asset",
+                                      "asset":  "atlas-cluster-white"
+                                  },
+                      "transform":  {
+                                        "position":  [
+                                                         29,
+                                                         4.5,
+                                                         -8
+                                                     ],
+                                        "rotationDeg":  [
+                                                            60,
+                                                            0,
+                                                            24
+                                                        ],
+                                        "scale":  [
+                                                      3,
+                                                      3,
+                                                      3
+                                                  ]
+                                    }
+                  },
+                  {
+                      "id":  "welcome-panel",
+                      "name":  "Welcome Panel",
+                      "content":  {
+                                      "type":  "asset",
+                                      "asset":  "welcome-panel"
+                                  },
+                      "transform":  {
+                                        "position":  [
+                                                         0,
+                                                         2.25,
+                                                         -2.7
+                                                     ],
+                                        "rotationDeg":  [
+                                                            -4,
+                                                            0,
+                                                            0
+                                                        ],
+                                        "scale":  0.42
+                                    },
+                      "components":  {
+                                         "RayInteractable":  {
+
+                                                             }
+                                     }
+                  },
+                  {
+                      "id":  "key-light",
+                      "name":  "Key Light",
+                      "transform":  {
+                                        "position":  [
+                                                         -3,
+                                                         9,
+                                                         2.5
+                                                     ],
+                                        "rotationDeg":  [
+                                                            -68,
+                                                            -14,
+                                                            0
+                                                        ]
+                                    },
+                      "components":  {
+                                         "DirectionalLight":  {
+                                                                  "color":  [
+                                                                                1,
+                                                                                0.88,
+                                                                                0.68,
+                                                                                1
+                                                                            ],
+                                                                  "intensity":  1.7,
+                                                                  "castShadow":  true,
+                                                                  "shadowMapSize":  "2048",
+                                                                  "shadowCameraSize":  9,
+                                                                  "shadowCameraNear":  2,
+                                                                  "shadowCameraFar":  26,
+                                                                  "shadowRadius":  6,
+                                                                  "shadowBias":  -0.0004,
+                                                                  "shadowNormalBias":  0.02
+                                                              }
+                                     }
+                  },
+                  {
+                      "id":  "fill-light",
+                      "name":  "Fill Light",
+                      "components":  {
+                                         "HemisphereLight":  {
+                                                                 "skyColor":  [
+                                                                                  0.35,
+                                                                                  0.45,
+                                                                                  0.7,
+                                                                                  1
+                                                                              ],
+                                                                 "groundColor":  [
+                                                                                     0.08,
+                                                                                     0.09,
+                                                                                     0.14,
+                                                                                     1
+                                                                                 ],
+                                                                 "intensity":  0.85
+                                                             }
+                                     }
+                  },
+                  {
+                      "id":  "ev-slot-1",
+                      "name":  "Focus Slot 1",
+                      "content":  {
+                                      "type":  "asset",
+                                      "asset":  "atlas-node-orb",
+                                      "castShadow":  true
+                                  },
+                      "transform":  {
+                                        "position":  [
+                                                         -0.985,
+                                                         0.98,
+                                                         -0.769
+                                                     ],
+                                        "scale":  0.8
+                                    },
+                      "components":  {
+                                         "RayInteractable":  {
+
+                                                             },
+                                         "DistanceGrabbable":  {
+                                                                   "movementMode":  "MoveFromTarget",
+                                                                   "scale":  false
+                                                               }
+                                     }
+                  },
+                  {
+                      "id":  "ev-slot-2",
+                      "name":  "Focus Slot 2",
+                      "content":  {
+                                      "type":  "asset",
+                                      "asset":  "atlas-node-orb",
+                                      "castShadow":  true
+                                  },
+                      "transform":  {
+                                        "position":  [
+                                                         -0.754,
+                                                         0.98,
+                                                         -0.997
+                                                     ],
+                                        "scale":  0.8
+                                    },
+                      "components":  {
+                                         "RayInteractable":  {
+
+                                                             },
+                                         "DistanceGrabbable":  {
+                                                                   "movementMode":  "MoveFromTarget",
+                                                                   "scale":  false
+                                                               }
+                                     }
+                  },
+                  {
+                      "id":  "ev-slot-3",
+                      "name":  "Focus Slot 3",
+                      "content":  {
+                                      "type":  "asset",
+                                      "asset":  "atlas-node-orb",
+                                      "castShadow":  true
+                                  },
+                      "transform":  {
+                                        "position":  [
+                                                         -0.474,
+                                                         0.98,
+                                                         -1.156
+                                                     ],
+                                        "scale":  0.8
+                                    },
+                      "components":  {
+                                         "RayInteractable":  {
+
+                                                             },
+                                         "DistanceGrabbable":  {
+                                                                   "movementMode":  "MoveFromTarget",
+                                                                   "scale":  false
+                                                               }
+                                     }
+                  },
+                  {
+                      "id":  "ev-slot-4",
+                      "name":  "Focus Slot 4",
+                      "content":  {
+                                      "type":  "asset",
+                                      "asset":  "atlas-node-orb",
+                                      "castShadow":  true
+                                  },
+                      "transform":  {
+                                        "position":  [
+                                                         -0.161,
+                                                         0.98,
+                                                         -1.24
+                                                     ],
+                                        "scale":  0.8
+                                    },
+                      "components":  {
+                                         "RayInteractable":  {
+
+                                                             },
+                                         "DistanceGrabbable":  {
+                                                                   "movementMode":  "MoveFromTarget",
+                                                                   "scale":  false
+                                                               }
+                                     }
+                  },
+                  {
+                      "id":  "ev-slot-5",
+                      "name":  "Focus Slot 5",
+                      "content":  {
+                                      "type":  "asset",
+                                      "asset":  "atlas-node-orb",
+                                      "castShadow":  true
+                                  },
+                      "transform":  {
+                                        "position":  [
+                                                         0.161,
+                                                         0.98,
+                                                         -1.24
+                                                     ],
+                                        "scale":  0.8
+                                    },
+                      "components":  {
+                                         "RayInteractable":  {
+
+                                                             },
+                                         "DistanceGrabbable":  {
+                                                                   "movementMode":  "MoveFromTarget",
+                                                                   "scale":  false
+                                                               }
+                                     }
+                  },
+                  {
+                      "id":  "ev-slot-6",
+                      "name":  "Focus Slot 6",
+                      "content":  {
+                                      "type":  "asset",
+                                      "asset":  "atlas-node-orb",
+                                      "castShadow":  true
+                                  },
+                      "transform":  {
+                                        "position":  [
+                                                         0.474,
+                                                         0.98,
+                                                         -1.156
+                                                     ],
+                                        "scale":  0.8
+                                    },
+                      "components":  {
+                                         "RayInteractable":  {
+
+                                                             },
+                                         "DistanceGrabbable":  {
+                                                                   "movementMode":  "MoveFromTarget",
+                                                                   "scale":  false
+                                                               }
+                                     }
+                  },
+                  {
+                      "id":  "ev-slot-7",
+                      "name":  "Focus Slot 7",
+                      "content":  {
+                                      "type":  "asset",
+                                      "asset":  "atlas-node-orb",
+                                      "castShadow":  true
+                                  },
+                      "transform":  {
+                                        "position":  [
+                                                         0.754,
+                                                         0.98,
+                                                         -0.997
+                                                     ],
+                                        "scale":  0.8
+                                    },
+                      "components":  {
+                                         "RayInteractable":  {
+
+                                                             },
+                                         "DistanceGrabbable":  {
+                                                                   "movementMode":  "MoveFromTarget",
+                                                                   "scale":  false
+                                                               }
+                                     }
+                  },
+                  {
+                      "id":  "ev-slot-8",
+                      "name":  "Focus Slot 8",
+                      "content":  {
+                                      "type":  "asset",
+                                      "asset":  "atlas-node-orb",
+                                      "castShadow":  true
+                                  },
+                      "transform":  {
+                                        "position":  [
+                                                         0.985,
+                                                         0.98,
+                                                         -0.769
+                                                     ],
+                                        "scale":  0.8
+                                    },
+                      "components":  {
+                                         "RayInteractable":  {
+
+                                                             },
+                                         "DistanceGrabbable":  {
+                                                                   "movementMode":  "MoveFromTarget",
+                                                                   "scale":  false
+                                                               }
+                                     }
+                  },
+                  {
+                      "id":  "panel-handle",
+                      "name":  "Panel Drag Handle",
+                      "content":  {
+                                      "type":  "asset",
+                                      "asset":  "atlas-node-orb",
+                                      "castShadow":  true
+                                  },
+                      "transform":  {
+                                        "position":  [
+                                                         -0.85,
+                                                         1.12,
+                                                         -2.6
+                                                     ],
+                                        "scale":  0.55
+                                    },
+                      "components":  {
+                                         "RayInteractable":  {
+
+                                                             },
+                                         "DistanceGrabbable":  {
+                                                                   "movementMode":  "MoveFromTarget",
+                                                                   "scale":  false
+                                                               }
+                                     }
+                  }
+              ]
+}

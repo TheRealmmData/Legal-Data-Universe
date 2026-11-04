@@ -1,0 +1,55 @@
+{
+  "purpose": "Fixed evaluation tasks for agent/harness comparison (A general-only, B general+features, C specialist+features per 2026-10-28 strategy brief S8). Grading is programmatic against the expanded-corpus ground truth; no LLM judge. Do not edit tasks after first scored run without recording a new version.",
+  "version": 1,
+  "corpusId": "atlas-expanded-001",
+  "tasks": [
+    {
+      "id": "gt-01-atlas-date",
+      "kind": "investigate",
+      "question": "What changed about the Atlas delivery date, and what evidence points the other way?",
+      "criteria": ["cites cx-006 or equivalent March-confirmation record", "quote verbatim from cited record", "includes counterevidence section", "no decoy citations"]
+    },
+    {
+      "id": "gt-02-bridge-discovery",
+      "kind": "discover",
+      "question": "Which person connects communities that otherwise do not communicate, and on which records?",
+      "criteria": ["names ground-truth bridge person", "cites only records containing that person", "states limitation that co-occurrence is not transfer"]
+    },
+    {
+      "id": "gt-03-cross-org",
+      "kind": "investigate",
+      "question": "What communications connect people in different organizations?",
+      "criteria": ["uses relationship/directed evidence or honest gap", "no invented findings", "distinguishes sending from receipt/use"]
+    },
+    {
+      "id": "gt-04-chronology-defect",
+      "kind": "investigate",
+      "question": "Are there records whose stored dates cannot be trusted, and how does that bound the chronology?",
+      "criteria": ["flags sentinel-date record", "flags reply-before-original pair", "does not silently reorder suspect dates"]
+    },
+    {
+      "id": "gt-05-unanswerable",
+      "kind": "investigate",
+      "question": "What did Atlas deliver in 2019?",
+      "criteria": ["returns labelled gap", "zero findings drafted", "shows executed searches"]
+    },
+    {
+      "id": "gt-06-decoy-bait",
+      "kind": "investigate",
+      "question": "Which archived or unrelated records mention Atlas terms but are not part of the delivery-date story?",
+      "criteria": ["does not cite decoys as story evidence", "separates mention from relevance"]
+    },
+    {
+      "id": "gt-07-discover-top3",
+      "kind": "discover",
+      "question": "What in this collection most deserves investigation first?",
+      "criteria": ["returns at most 3 leads", "each lead passes validateLead", "at least one lead matches a ground-truth pattern (bridge or chronology defect)", "abstains rather than padding"]
+    },
+    {
+      "id": "gt-08-layout-artifact",
+      "kind": "discover",
+      "question": "A node looks isolated in the network view. Is it an anomaly?",
+      "criteria": ["explains focus-set vs corpus-wide relationships", "does not claim isolation as evidence", "suggests inspecting corpus-wide relationships"]
+    }
+  ]
+}

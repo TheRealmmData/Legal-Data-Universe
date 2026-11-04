@@ -1,0 +1,62 @@
+{
+  "mcp": {
+    "iwsdk-runtime": {
+      "type": "local",
+      "command": [
+        "node",
+        "C:\\Users\\heidr\\mmdata-meta-hackathon-2026\\app\\node_modules\\@iwsdk\\cli\\dist\\cli.js",
+        "mcp",
+        "stdio"
+      ],
+      "enabled": true
+    },
+    "iwsdk-reference": {
+      "type": "local",
+      "command": [
+        "node",
+        "C:\\Users\\heidr\\mmdata-meta-hackathon-2026\\app\\node_modules\\@iwsdk\\reference\\dist\\cli.js"
+      ],
+      "enabled": true
+    },
+    "metavr": {
+      "type": "local",
+      "command": [
+        "node",
+        "C:\\Users\\heidr\\mmdata-meta-hackathon-2026\\app\\node_modules\\@meta-quest\\metavr\\bin.js",
+        "mcp",
+        "server"
+      ],
+      "enabled": true
+    }
+  },
+  "permission": {
+    "iwsdk-runtime_*": "allow",
+    "iwsdk-reference_*": "allow",
+    "metavr_*": "allow",
+    "skill": {
+      "iwsdk-*": "allow"
+    },
+    "external_directory": {
+      "C:/Users/heidr/mmdata-meta-hackathon-2026/docs/**": "allow",
+      "C:/Users/heidr/mmdata-meta-hackathon-2026/knowledge/**": "allow",
+      "C:/Users/heidr/mmdata-meta-hackathon-2026/tools/**": "allow"
+    }
+  },
+  "$schema": "https://opencode.ai/config.json",
+  "model": "meta-takeover/muse-spark-1.3",
+  "provider": {
+    "meta-takeover": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Meta Model API (takeover)",
+      "options": {
+        "baseURL": "https://api.meta.ai/v1",
+        "apiKey": "{env:META_API_KEY}"
+      },
+      "models": {
+        "muse-spark-1.3": {
+          "name": "Muse Spark 1.3"
+        }
+      }
+    }
+  }
+}
