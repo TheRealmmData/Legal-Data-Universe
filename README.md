@@ -1,6 +1,6 @@
 # Legal Data Universe — Immersive Analytics for Legal Data
 
-**Try it live:** `TO BE ADDED AT SUBMISSION — canonical public demo URL`
+**Try it live:** https://legal-data-universe.vercel.app
 (works in Quest Browser, desktop, phone, and tablet — no install)
 
 **Watch the demo video:** `TO BE ADDED AT SUBMISSION — video URL`

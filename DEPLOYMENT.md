@@ -1,6 +1,6 @@
 # Public judge deployment (Vercel)
 
-Canonical public URL: **OWNER TO FILL after the first production deployment**
+Canonical public URL: **https://legal-data-universe.vercel.app**
 (for example `https://legal-data-universe.vercel.app/`). Link that canonical
 alias in the GitHub README/About field and YouTube description, never a hashed
 deployment URL or a LAN address.
